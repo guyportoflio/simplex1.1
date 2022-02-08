@@ -1,5 +1,4 @@
 import json
-
 import requests
 
 url = "https://sandbox.test-simplexcc.com/wallet/merchant/v2/quote"
@@ -9,7 +8,7 @@ req_amount = 0.005
 req_currency = "BTC"
 req_fiat = "EUR"
 digit_curreny = "BTC"
-end_user = "ad543c9b-9878-499d-b5b4-83aa5234ce3a"
+end_user = "febaaf91-2c44-4f1a-b02c-8fafe25e75a2"
 payment_methods = ["credit_card"]
 
 credit_num = "4711 1000 0000 0000"
@@ -43,8 +42,8 @@ def dollartobit():
 
 def paymentrequest():
     url = "https://sandbox.test-simplexcc.com/wallet/merchant/v2/payments/partner/data"
-    qoute_num = "31aac56c-bca1-42be-a1c1-e83f11e9418d"
-    payment_num = "ad543c9b-9878-499d-b5b4-83aa5234ce3a"
+    qoute_num = "b95d0711-9f3d-4013-ac4f-89f18474fd25"
+    payment_num = "c3044f5b-9d61-45d5-b216-b32b57a51244"
     acc_details = {
         "account_details": {
             "app_provider_id": "wallex",
@@ -81,3 +80,4 @@ print("\n\n\n")
 dollartobit()
 print("\n\n\n")
 paymentrequest()
+print("\n\n\n")
